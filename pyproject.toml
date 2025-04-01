@@ -1,0 +1,34 @@
+[project]
+name = "json_pack"
+description = "JSON IO with embedded pandas and numpy data"
+authors = [{name = "Ryan A. Colyer", email = "ryancolyer@yahoo.com"}]
+dependencies = ["numpy", "pandas"]
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE.txt"]
+keywords = ["JSON", "numpy", "pandas", "pack", "encode", "binary", "base64"]
+requires-python = ">= 3.9"
+dynamic = ["version"]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Scientific/Engineering",
+]
+
+[project.urls]
+"Source code" = "https://github.com/rcolyer/json_pack"
+"Issue tracker" = "https://github.com/rcolyer/json_pack/issues"
+
+[build-system]
+requires = ["setuptools >= 62.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.dynamic]
+version.attr = "json_pack.__version__"
+
