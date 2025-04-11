@@ -6,10 +6,14 @@ These properties make it suitable for both quick intermediate data storage durin
 
 # API
 
-* `data = jp.JSLoad('filename.json')` -- Loads from a file.
-* `data = jp.JSLoadStr(data_in_string_form)` -- Parses a string.
 * `jp.JSSave('filename.json', data)` -- Saves to a file.
+* `data = jp.JSLoad('filename.json')` -- Loads from a file.
 * `data_as_string = jp.JSSaveStr(data)` -- Converts data to a string.
+* `data = jp.JSLoadStr(data_as_string)` -- Parses a string.
+* `jp.JSLinesSave('filename.jsonl', sequence)` -- Saves a list of entries to a JSON-lines file.
+* `sequence = jp.JSLinesLoad('filename.jsonl')` -- Loads from a JSON-lines file.
+* `seq_as_string = jp.JSLinesSaveStr(sequence)` -- Converts a list of entries to a string.
+* `sequence = jp.JSLinesLoadStr(seq_as_string)` -- Parses a JSON-lines string.
 
 # Format
 
