@@ -6,6 +6,7 @@ These properties make it suitable for both quick intermediate data storage durin
 
 # API
 
+* `import json_pack as jp` -- Recommended import.
 * `jp.JSSave('filename.json', data)` -- Saves to a file.
 * `data = jp.JSLoad('filename.json')` -- Loads from a file.
 * `data_as_string = jp.JSSaveStr(data)` -- Converts data to a string.
